@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 class Index extends React.Component {
   render() {
@@ -6,10 +7,10 @@ class Index extends React.Component {
       <div>
         <h1>Index page</h1>
         <ul>
-          <li><a href="/blogs">Blogs</a></li>
-          <li><a href="/cv">CV</a></li>
-          <li><a href="/portfolios">Portfolios</a></li>
-          <li><a href="/about">About</a></li>
+          <li><Link href="/blogs"><a>Blogs</a></Link></li>
+          <li><Link href="/cv"><a>CV</a></Link></li>
+          <li><Link href="/portfolios"><a>Portfolios</a></Link></li>
+          <li><Link href="/about"><a>About</a></Link></li>
         </ul>
       </div>
     )
