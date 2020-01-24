@@ -1,7 +1,12 @@
-const Index = () => {
-  return (
-    <h1> Hello from Next.js </h1>
-  )
-}
+import Link from 'next/link';
 
-export default Index;
+export default function Index() {
+  return (
+    <div>
+      <h1>Hello Next.js 👋</h1>
+      <Link href="/about">
+        <a>About</a>
+      </Link>
+    </div>
+  );
+}
